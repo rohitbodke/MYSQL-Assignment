@@ -1,0 +1,13 @@
+1.select count(*) from salespeople where sname like 'a%';
+
+
+2.select sname from salespeople s left join orders o on s.snum=o.snum where o.amt>2000;
+
+
+3.select count(*) from SALESPEOPLE where city='Newyork';
+
+
+4.select * from SALESPEOPLE where city='London' or city='Paris';
+
+
+5.select o.odate,s.sname from orders o left join salespeople s on o.snum=s.snum
